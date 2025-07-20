@@ -1,7 +1,7 @@
 export interface Template {
   id: string;
   name: string;
-  category: 'card' | 'flyer' | 'social' | 'business' | 'creative';
+  category: 'social' | 'business' | 'creative' | 'marketing' | 'personal' | 'event';
   description: string;
   prompt: string;
   dimensions: { width: number; height: number };
@@ -50,7 +50,7 @@ export const TEMPLATES: Template[] = [
   {
     id: 'flyer-1',
     name: 'Flyer Promocional',
-    category: 'flyer',
+    category: 'marketing',
     description: 'Flyer para promoções e ofertas',
     prompt: 'Promotional flyer with discount elements, bold typography, attractive design, marketing layout, eye-catching colors',
     dimensions: { width: 2480, height: 3508 },
@@ -61,7 +61,7 @@ export const TEMPLATES: Template[] = [
   {
     id: 'flyer-2',
     name: 'Flyer de Serviços',
-    category: 'flyer',
+    category: 'business',
     description: 'Flyer para apresentar serviços',
     prompt: 'Professional service flyer with business elements, clean layout, service highlights, modern design, corporate style',
     dimensions: { width: 2480, height: 3508 },

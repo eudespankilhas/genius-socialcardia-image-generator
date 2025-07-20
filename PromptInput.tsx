@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { ArrowUpRight, ArrowUp, RefreshCw } from "lucide-react";
 import { getRandomSuggestions, Suggestion } from "@/lib/suggestions";
+import { Template } from "@/lib/templates";
 import { Spinner } from "@/components/ui/spinner";
 import { Textarea } from "@/components/ui/textarea";
 import { cn } from "@/lib/utils";
@@ -15,6 +16,7 @@ interface PromptInputProps {
   mode: QualityMode;
   onModeChange: (mode: QualityMode) => void;
   suggestions: Suggestion[];
+  selectedTemplate?: Template | null;
 }
 
 export function PromptInput({

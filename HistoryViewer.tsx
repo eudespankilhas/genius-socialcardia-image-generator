@@ -149,7 +149,7 @@ export function HistoryViewer({ onImageSelect, onClose }: HistoryViewerProps) {
               <Input
                 placeholder="Buscar por prompt ou tags..."
                 value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
+                onChange={(e: React.ChangeEvent<HTMLInputElement>) => setSearchQuery(e.target.value)}
                 className="pl-10"
               />
             </div>

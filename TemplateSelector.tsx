@@ -20,7 +20,7 @@ import {
 
 interface TemplateSelectorProps {
   onTemplateSelect: (template: Template) => void;
-  selectedTemplate?: Template;
+  selectedTemplate?: Template | null;
 }
 
 const categoryIcons = {
