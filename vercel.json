@@ -1,5 +1,5 @@
 {
-  "name": "geniussocialcardia-image-generator",
+  "name": "genius-socialcardia-image-generator",
   "version": 2,
   "builds": [
     {
@@ -19,11 +19,6 @@
   ],
   "env": {
     "NODE_ENV": "production"
-  },
-  "functions": {
-    "app/api/generate-images/route.ts": {
-      "maxDuration": 60
-    }
   },
   "headers": [
     {
